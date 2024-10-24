@@ -1,27 +1,20 @@
-# EzyMetrics API Documentation
-
-This document provides an overview of the EzyMetrics API, including its structure, functionalities, and how to use it effectively.
+# EzyMetrics Assignment API Documentation
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Project Structure](#project-structure)
-3. [Database Models](#database-models)
+1. [Project Structure](#project-structure)
+2. [Database Models](#database-models)
    - [Lead Model](#lead-model)
    - [Campaign Model](#campaign-model)
-4. [API Endpoints](#api-endpoints)
+3. [API Endpoints](#api-endpoints)
    - [Fetch Leads](#fetch-leads)
    - [Fetch Campaigns](#fetch-campaigns)
    - [Load Data to MongoDB](#load-data-to-mongodb)
    - [Generate CSV Report](#generate-csv-report)
-5. [Metrics Calculation](#metrics-calculation)
-6. [PDF Generation](#pdf-generation)
-7. [Email Notification](#email-notification)
-8. [Setup and Installation](#setup-and-installation)
-
-## Introduction
-
-EzyMetrics is a web application designed to manage and analyze leads and campaigns. It utilizes a RESTful API to perform operations like fetching leads, campaigns, and generating reports. The application uses MongoDB as the database and includes features for data loading, metrics calculation, PDF report generation, and email notifications.
+4. [Metrics Calculation](#metrics-calculation)
+5. [PDF Generation](#pdf-generation)
+6. [Email Notification](#email-notification)
+7. [Setup and Installation](#setup-and-installation)
 
 ## Project Structure
 
@@ -192,6 +185,11 @@ This endpoint loads leads and campaigns from JSON files into the MongoDB databas
 Data loaded successfully
 ```
 
+Screenshot of the MongoDB database with the stored data,
+
+<img width="944" alt="image" src="https://github.com/user-attachments/assets/8232127a-ec41-4a56-9f79-c6c8411b31c5">
+
+
 ### Generate CSV Report
 
 **GET** `/api/report/csv`
@@ -204,6 +202,12 @@ This endpoint generates a CSV report containing various metrics related to leads
 Content-Type: text/csv
 Attachment: report.csv
 ```
+Screenshot of the csv report being sent:
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/a54cf13f-0930-4e40-a1a9-5e5dc3bd01bb">
+
+And the PDF report can be found in the repository named as report.pdf
+
 
 ## Metrics Calculation
 
@@ -291,6 +295,11 @@ const sendEmailNotification = async (recipient, subject, text) => {
 module.exports = { sendEmailNotification };
 ```
 
+Screenshot of Successful email notification being sent. Since I am using ethereal mail the mail does not actually gets sent but this can be used to make sure your api is working correctly and efficiently.
+
+<img width="886" alt="image" src="https://github.com/user-attachments/assets/6c2ff46e-0b3f-4353-b7e9-dc88e8d87352">
+
+
 ## Setup and Installation
 
 1. Clone the repository:
@@ -304,7 +313,7 @@ module.exports = { sendEmailNotification };
    ```
 3. Start the server:
    ```bash
-   node server.js
+   node app.js
    ```
 4. Access the API at `http://localhost:3000/api`.
 
