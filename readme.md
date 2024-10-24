@@ -316,15 +316,3 @@ Screenshot of Successful email notification being sent. Since I am using etherea
    node app.js
    ```
 4. Access the API at `http://localhost:3000/api`.
-
-## Conclusion
-
-This documentation provides a detailed overview of the EzyMetrics API, its functionalities, and how to use it effectively. Feel free to explore and modify the code according to your requirements.
-
-### Additional Notes
-
-- Make sure to replace placeholder values with actual data (like email credentials) in the code snippets.
-- You can add diagrams or charts for visual representation, especially for metrics and data flow.
-- Include sample JSON data for leads and campaigns in the documentation for better clarity.
-
-Let me know if you need any further modifications or additions!
