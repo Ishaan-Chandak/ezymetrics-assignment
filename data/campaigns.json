@@ -1,0 +1,87 @@
+[
+    {
+      "campaignId": "C1001",
+      "name": "Winter Promo 2023",
+      "type": "Email",
+      "startDate": "2023-09-15",
+      "endDate": "2023-12-31",
+      "budget": 5000,
+      "leadsGenerated": 120,
+      "status": "Ongoing",
+      "createdBy": "Alice Johnson",
+      "channel": "Email",
+      "performance": "Moderate",
+      "conversionRate": 12.5
+    },
+    {
+      "campaignId": "C1002",
+      "name": "Holiday Social Media Blitz",
+      "type": "Social Media",
+      "startDate": "2023-10-01",
+      "endDate": "2023-11-30",
+      "budget": 8000,
+      "leadsGenerated": 200,
+      "status": "Ongoing",
+      "createdBy": "Bob Williams",
+      "channel": "Facebook, Instagram",
+      "performance": "High",
+      "conversionRate": 15.0
+    },
+    {
+      "campaignId": "C1003",
+      "name": "Tech Conference 2023",
+      "type": "Event",
+      "startDate": "2023-08-01",
+      "endDate": "2023-08-05",
+      "budget": 15000,
+      "leadsGenerated": 350,
+      "status": "Completed",
+      "createdBy": "Carol Lewis",
+      "channel": "In-person",
+      "performance": "Excellent",
+      "conversionRate": 22.1
+    },
+    {
+      "campaignId": "C1004",
+      "name": "Spring Sale Ads",
+      "type": "PPC",
+      "startDate": "2023-03-01",
+      "endDate": "2023-05-31",
+      "budget": 10000,
+      "leadsGenerated": 275,
+      "status": "Completed",
+      "createdBy": "Danielle Morris",
+      "channel": "Google Ads",
+      "performance": "Moderate",
+      "conversionRate": 10.8
+    },
+    {
+      "campaignId": "C1005",
+      "name": "New Product Launch",
+      "type": "Email",
+      "startDate": "2023-11-01",
+      "endDate": "2023-11-30",
+      "budget": 3000,
+      "leadsGenerated": 150,
+      "status": "Planned",
+      "createdBy": "Evan Green",
+      "channel": "Email",
+      "performance": "N/A",
+      "conversionRate": 0.0
+    },
+    {
+      "campaignId": "C1006",
+      "name": "Black Friday Sale",
+      "type": "PPC",
+      "startDate": "2023-11-15",
+      "endDate": "2023-11-30",
+      "budget": 12000,
+      "leadsGenerated": 500,
+      "status": "Planned",
+      "createdBy": "Frank Harris",
+      "channel": "Google Ads, Facebook",
+      "performance": "N/A",
+      "conversionRate": 0.0
+    }
+  ]
+  
