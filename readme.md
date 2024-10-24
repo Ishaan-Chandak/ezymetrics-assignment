@@ -1,6 +1,3 @@
-Here's a comprehensive guide in Markdown format that explains the entire code structure, including API routes, functionalities, and relevant models. This guide will help you understand the code, its purpose, and how to implement it effectively.
-
-```markdown
 # EzyMetrics API Documentation
 
 This document provides an overview of the EzyMetrics API, including its structure, functionalities, and how to use it effectively.
@@ -27,8 +24,8 @@ This document provides an overview of the EzyMetrics API, including its structur
 EzyMetrics is a web application designed to manage and analyze leads and campaigns. It utilizes a RESTful API to perform operations like fetching leads, campaigns, and generating reports. The application uses MongoDB as the database and includes features for data loading, metrics calculation, PDF report generation, and email notifications.
 
 ## Project Structure
-```
 
+```
 EzyMetrics/
 ├── models/
 │ ├── Lead.js
@@ -43,13 +40,14 @@ EzyMetrics/
 │ └── campaigns.json
 ├── server.js
 └── package.json
-
-````
+```
 
 ## Database Models
 
 ### Lead Model
+
 The `Lead` model represents a lead in the application. It includes fields such as:
+
 - `leadId`: Unique identifier for the lead.
 - `firstName`, `lastName`, `email`, `phone`: Personal details of the lead.
 - `status`: Current status of the lead (e.g., Interested, Qualified, Closed).
@@ -62,8 +60,9 @@ The `Lead` model represents a lead in the application. It includes fields such a
 - `closedAt`: Timestamp when the lead was closed.
 
 **Lead Schema Code:**
+
 ```javascript
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const leadSchema = new mongoose.Schema({
   leadId: { type: String, required: true, unique: true },
@@ -71,19 +70,23 @@ const leadSchema = new mongoose.Schema({
   lastName: { type: String, required: true },
   email: { type: String, required: true, match: /.+\@.+\..+/ },
   phone: { type: String, required: true },
-  status: { type: String, enum: ['Interested', 'Contacted', 'Qualified', 'Closed', 'Lost'], required: true },
+  status: {
+    type: String,
+    enum: ["Interested", "Contacted", "Qualified", "Closed", "Lost"],
+    required: true,
+  },
   createdAt: { type: Date, required: true, default: Date.now },
   source: { type: String, required: true },
   assignedTo: { type: String, required: true },
   company: { type: String, required: true },
   leadScore: { type: Number, required: true },
   salesRep: { type: String, required: true },
-  closedAt: { type: Date }
+  closedAt: { type: Date },
 });
 
-const Lead = mongoose.model('Lead', leadSchema);
+const Lead = mongoose.model("Lead", leadSchema);
 module.exports = Lead;
-````
+```
 
 ### Campaign Model
 
@@ -309,12 +312,10 @@ module.exports = { sendEmailNotification };
 
 This documentation provides a detailed overview of the EzyMetrics API, its functionalities, and how to use it effectively. Feel free to explore and modify the code according to your requirements.
 
-```
-
 ### Additional Notes
+
 - Make sure to replace placeholder values with actual data (like email credentials) in the code snippets.
 - You can add diagrams or charts for visual representation, especially for metrics and data flow.
 - Include sample JSON data for leads and campaigns in the documentation for better clarity.
 
 Let me know if you need any further modifications or additions!
-```
